@@ -1,0 +1,401 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.slider {
+  height: 80vh;
+  background-color: whitesmoke;
+  clip-path: polygon(
+    14% 0,
+    87% 0,
+    100% 20%,
+    100% 80%,
+    88% 100%,
+    13% 100%,
+    0% 80%,
+    0% 20%
+  );
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+  
+ 
+  
+  .sliderItem {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .sliderImage {
+    position: relative;
+    z-index: 0;
+    height: auto;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 12px;
+  }
+  
+  .sliderText {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 400px;
+    margin-left: 20px;
+    z-index: 1;
+  }
+  
+  .sliderTitle {
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .sliderPrice {
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    border: 0.5px solid black;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+  }
+  
+  .BuyButton {
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: black;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+  }
+  
+  .BuyButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .featureIcon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+
+
+  
+  .productImg {
+    height: 400px;
+    width: auto;
+  }
+  
+  .productDetails {
+    width: 400px;
+    padding: 50px;
+  }
+  
+  .productTitle {
+    font-size: 45px;
+    font-weight: 900;
+  }
+  
+  .productPrice {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .productDesc {
+    font-size: 20px;
+    color: gray;
+  }
+  
+  .colors,
+  .grams {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  .gram {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .productButton {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  
+  .productButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .payment {
+    width: 500px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 20px;
+    right: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 50;
+  }
+  
+  .payTitle {
+    font-size: 20px;
+    color: gray;
+  }
+  
+  .payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .cardIcons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .cardInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .payInput.sm {
+    width: 25%;
+  }
+  
+  .payButton {
+    margin-top: 20px;
+    background-color: #118b06;
+    color: antiquewhite;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+
+  .gallery {
+    padding: 50px;
+    display: flex;
+    background-color: black;
+  }
+  
+  .galleryItem {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .galleryImg {
+    width: 100%;
+  }
+  
+  .galleryTitle {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .partnerImages {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .partnerItem {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    padding: 10px;
+  }
+  
+  .partnerImg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
+  
+  .partnerButton {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pButton {
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+  
+
+  .sliderBox {
+    background-color: rgba(214, 205, 205, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(177, 45, 45, 0.2);
+    height: 300px;
+    width: 400px;
+  }
+  .BuyButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .BuyButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .oldPrice {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .newPrice {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .sliderArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.sliderArrow:hover {
+  background-color: black;
+  color: white;
+}
+
+.sliderArrow.left {
+  left: 1px;
+}
+
+.sliderArrow.right {
+  right: 1px;
+}
+  
+  
